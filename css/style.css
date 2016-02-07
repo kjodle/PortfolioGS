@@ -161,6 +161,10 @@ code {
 	font-family: "Roboto Mono", sans-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 /* Header link */
 
 header h2 a {
