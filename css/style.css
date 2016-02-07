@@ -266,3 +266,60 @@ nav li a:hover {
 	background: #8b0000;
 	color: #fff;
 }
+
+@media screen and (max-width: 800px) {
+
+body > header,
+#container,
+body > footer, {
+	width: 100%;
+}
+
+body > header,
+body > footer {
+	padding: 1em;
+}
+
+body > header img {
+	width: 75px;
+	height: 75px;
+}
+
+header h1 {
+	position: static;
+	font-size: 1.8em;
+}
+
+header h2 {
+	position: static;
+	font-size: 1.3em;
+}
+
+
+.rwd-break {
+	display: block;
+}
+
+#container {
+	margin: 0;
+	width: 100%;
+	min-width: 0;
+}
+
+#accordion {
+	margin-bottom: 1em;
+	max-width: 100%;
+}
+
+body > footer {
+	position: relative;
+}
+
+#social a {
+	font-size: 2em;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0.2em 0.8em 1em 0.8em;
+
+}

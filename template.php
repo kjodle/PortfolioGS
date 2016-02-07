@@ -29,8 +29,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Site style sheets -->
-	<link rel="stylesheet" media="screen and (min-width: 801px)" href="<?php get_theme_url(); ?>/css/style.css">
-	<link rel="stylesheet" media="screen and (max-width: 800px)" href="<?php get_theme_url(); ?>/css/mobile.css">
+	<link rel="stylesheet" media="screen" href="<?php get_theme_url(); ?>/css/style.css">
 	<link rel="stylesheet" media="print" href="<?php get_theme_url(); ?>/css/print.css">
 
 </head>
