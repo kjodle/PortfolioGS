@@ -25,7 +25,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!-- Site style sheets -->
-	<link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/style.css" media="all" />
+	<link rel="stylesheet" media="screen and (min-width: 801px)" href="<?php get_theme_url(); ?>/css/style.css?v=1.0">
+	<link rel="stylesheet" media="screen and (max-width: 800px)" href="<?php get_theme_url(); ?>/css/mobile.css?v=1.0">
+	<link rel="stylesheet" media="print" href="css/print.css?v=1.0">
 
 </head>
 <body id="<?php get_page_slug(); ?>" >
@@ -34,23 +36,14 @@
 	<div id="siteinfo">
 		<img src="<?php get_theme_url(); ?>/images/avatar-002.png" />
 		<h1>Kenneth John Odle</h1>
-		<h2>Web Portfolio</h2>
+		<h2><a href="https://portfolio.kjodle.net/" title="Click here to return to portfolio">Web Portfolio</a></h2>
 	<div style="clear:both;"></div>
 	</div>
 </header>
 
-<nav>
-	<ul>
-		<li><a href="<?php get_home_url; ?>">Home</a></li>
-		<li><a href="<?php get_home_url; ?>">Home</a></li>
-		<li><a href="<?php get_home_url; ?>">Home</a></li>
-	</ul>
-</nav>
-<div style="clear:both;"></div>
-
 
 <div id="container">
-		<h1><?php get_page_title(); ?></h1>	
+		<a href="<?php get_site_url(); ?>" class="home-link"><span class="fa fa-backward"></span>&nbsp;Home</a>
 			<div id="page-content">
 				<div class="page-text">
 					<?php get_page_content(); ?>

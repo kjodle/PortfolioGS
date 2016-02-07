@@ -38,6 +38,11 @@ h6 {
 	font-family: "Roboto Slab", serif;
 }
 
+code,
+pre {
+	font-family: 'Roboto Mono', monospace;
+}
+
 header {
 	margin: 0;
 	width: 100%;
@@ -156,7 +161,60 @@ code {
 	font-family: "Roboto Mono", sans-serif;
 }
 
+/* Header link */
+
+header h2 a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	border-bottom: dotted 1px #AB4646;
+	transition: border-color 1s;
+}
+
+header h2 a:hover {
+	border-color: #D5A2A2;
+}
+
+/* Blog Posts */
+
+h3.nm_post_title {
+	border-bottom: solid 1px #8b0000;
+	width: 100%;
+}
+
+h3.nm_post_title a {
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	color: #8b0000;
+	font-size: 2.5em;
+}
+
+a.home-link,
+.nm_post_meta a,
+.nm_post_back a,
+.nm_readmore a {
+	text-decoration: none;
+	color: #aaa;
+	transition: color 1s;
+}
+
+a.home-link:hover,
+.nm_post_meta a:hover,
+.nm_post_back a:hover,
+.nm_readmore a:hover {
+	color: #8b0000;
+}
+
+.left {
+	margin-right: 1em;
+}
+
+.right {
+	margin-left: 1em;
+}
+
 /* Navigation elements */
+/* Unneeded for now    */
 
 nav {
 	width: 100%;
