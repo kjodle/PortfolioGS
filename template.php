@@ -13,7 +13,8 @@
 	<meta charset="utf-8">
 	<!-- Site Title -->
 	<title><?php get_page_clean_title(); ?> &lt; <?php get_site_name(); ?></title>
-	<?php get_header(); ?>
+	<!-- get_header() set to false for blog options; see http://www.cyberiada.org/cnb/news-manager-a/-->
+	<?php get_header(false); ?>
 	<meta name="robots" content="index, follow" />
 
 <!-- Google Webfonts -->
@@ -24,10 +25,13 @@
 <!-- FontAwesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+<!-- Enable responsiveness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- Site style sheets -->
-	<link rel="stylesheet" media="screen and (min-width: 801px)" href="<?php get_theme_url(); ?>/css/style.css?v=1.0">
-	<link rel="stylesheet" media="screen and (max-width: 800px)" href="<?php get_theme_url(); ?>/css/mobile.css?v=1.0">
-	<link rel="stylesheet" media="print" href="css/print.css?v=1.0">
+	<link rel="stylesheet" media="screen and (min-width: 801px)" href="<?php get_theme_url(); ?>/css/style.css">
+	<link rel="stylesheet" media="screen and (max-width: 800px)" href="<?php get_theme_url(); ?>/css/mobile.css">
+	<link rel="stylesheet" media="print" href="<?php get_theme_url(); ?>/css/print.css">
 
 </head>
 <body id="<?php get_page_slug(); ?>" >
@@ -43,7 +47,6 @@
 
 
 <div id="container">
-		<a href="<?php get_site_url(); ?>" class="home-link"><span class="fa fa-backward"></span>&nbsp;Home</a>
 			<div id="page-content">
 				<div class="page-text">
 					<?php get_page_content(); ?>
@@ -74,5 +77,6 @@
 
 <?php get_footer(); ?>
 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d9b277415c98d35" async="async"></script>
 </body>
 </html>
